@@ -1,7 +1,12 @@
+import { redirect } from "next/navigation";
+import Logo from "./components/ui/logo";
+
 export default function Page() {
+  redirect("/home");
+
   return (
-    <div>
-      <h1 className="text-5xl">Z</h1>
+    <div className="min-h-screen flex justify-center items-center">
+      <Logo size={80} />
     </div>
   );
 }
