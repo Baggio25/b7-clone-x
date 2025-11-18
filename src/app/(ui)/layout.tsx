@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import Logo from "../components/ui/logo";
 import NavItem from "../components/nav/nav-item";
 import { faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
+import NavLogout from "../components/nav/nav-logout";
 
 type Props = {
   children: ReactNode;
@@ -29,8 +30,8 @@ const Layout = ({ children }: Props) => {
             />
           </nav>
         </div>
-        <div>
-          ...
+        <div className="mb-6 flex flex-col gap-4">
+          <NavLogout />
         </div>
       </section>
       <section className="flex-1 max-w-lg">{children}</section>
