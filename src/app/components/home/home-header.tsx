@@ -7,7 +7,7 @@ import { useState } from "react";
 import HomeMenu from "./home-menu";
 
 const HomeHeader = () => {
-  const [showMenu, setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(false);
 
   return ( 
     <header className="flex justify-between p-6 border-b-2 border-gray-900">
