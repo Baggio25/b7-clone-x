@@ -4,6 +4,7 @@ import NavItem from "../components/nav/nav-item";
 import { faHouse, faUser } from "@fortawesome/free-solid-svg-icons";
 import NavLogout from "../components/nav/nav-logout";
 import NavMyProfile from "../components/nav/nav-myprofile";
+import SearchInput from "../components/ui/search-input";
 
 type Props = {
   children: ReactNode;
@@ -14,7 +15,7 @@ const Layout = ({ children }: Props) => {
     <main className="min-h-screen flex justify-center mx-auto max-w-7xl">
       <section
         className="hidden lg:flex flex-col sticky
-        top-0 h-screen w-72 px-3 border-r-2 border-gray-900"
+        top-0 h-screen w-72 px-3 border-r border-gray-900"
       >
         <div className="flex-1 mt-6">
           <Logo size={24} />
@@ -31,9 +32,9 @@ const Layout = ({ children }: Props) => {
       <section className="flex-1 max-w-lg">{children}</section>
       <aside
         className="hidden lg:flex flex-col gap6 sticky 
-        top-0 h-fit w-96 px-8 py-6 border-l-2 border-gray-900"
+        top-0 h-fit w-96 px-8 py-6 border-l-1 border-gray-900"
       >
-        direita
+        <SearchInput hideOnSearch />
       </aside>
     </main>
   );
