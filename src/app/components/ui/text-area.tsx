@@ -1,3 +1,5 @@
+"use client";
+
 type Props = {
   placeholder: string;
   rows: number;
@@ -12,6 +14,7 @@ const TextArea = ({ placeholder, rows, value }: Props) => {
         placeholder={placeholder}
         rows={rows}
         value={value}
+        onChange={() => {}}
       ></textarea>
     </div>
   );
