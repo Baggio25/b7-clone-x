@@ -2,6 +2,7 @@ import ProfileFeed from "@/app/components/profile/profile-feed";
 import Button from "@/app/components/ui/button";
 import GeneralHeader from "@/app/components/ui/general-header";
 import Input from "@/app/components/ui/input";
+import TextArea from "@/app/components/ui/text-area";
 import { user } from "@/data/user";
 import { faCamera, faLink, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -48,7 +49,11 @@ const EditPerfilPage = () => {
         </label>
         <label>
           <p className="text-lg text-gray-500 mb-2">Bio</p>
-          <Input placeholder="Informe sua bio" value={user.bio} />
+          <TextArea
+            placeholder="Descreva você mesmo"
+            value={user.bio}
+            rows={4}
+          />
         </label>
         <label>
           <p className="text-lg text-gray-500 mb-2">Link</p>
