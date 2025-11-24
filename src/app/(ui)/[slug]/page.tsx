@@ -1,3 +1,4 @@
+import ProfileFeed from "@/app/components/profile/profile-feed";
 import Button from "@/app/components/ui/button";
 import GeneralHeader from "@/app/components/ui/general-header";
 import { user } from "@/data/user";
@@ -6,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 const PerfilPage = () => {
-  const isMe = true;
+  const isMe = false;
 
   return (
     <div>
@@ -61,6 +62,8 @@ const PerfilPage = () => {
           </div>
         </div>
       </section>
+
+      <ProfileFeed />
     </div>
   );
 };
