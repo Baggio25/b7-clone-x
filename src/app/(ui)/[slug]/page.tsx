@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 const PerfilPage = () => {
-  const isMe = false;
+  const isMe = true;
 
   return (
     <div>
